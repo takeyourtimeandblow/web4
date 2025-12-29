@@ -1,0 +1,16 @@
+{% extends "base.html" %} {% block content %}
+<h2>Добавление департамента</h2>
+
+<form method="post">
+    {{ form.hidden_tag() }} {{ form.title.label }} {{ form.title }}<br />
+
+    {{ form.chief.label }} {{ form.chief }}<br />
+
+    {{ form.members.label }} {{ form.members }}<br />
+
+    {{ form.email.label }} {{ form.email }}<br />
+
+    {{ form.submit }}
+</form>
+
+{% endblock %}

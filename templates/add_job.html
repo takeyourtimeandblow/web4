@@ -1,0 +1,17 @@
+{% extends "base.html" %} {% block content %}
+<h2>Добавление работы</h2>
+
+<form method="post">
+    {{ form.hidden_tag() }} {{ form.team_leader.label }} {{ form.team_leader
+    }}<br />
+    {{ form.job.label }} {{ form.job }}<br />
+    {{ form.work_size.label }} {{ form.work_size }}<br />
+
+    {{ form.collaborators.label }} {{ form.collaborators }}<br />
+
+    {{ form.is_finished }} {{ form.is_finished.label }}<br />
+
+    {{ form.submit }}
+</form>
+
+{% endblock %}

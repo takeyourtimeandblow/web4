@@ -1,0 +1,15 @@
+{% extends "base.html" %} {% block content %}
+<h2>Регистрация</h2>
+<form method="post">
+    {{ form.hidden_tag() }} {{ form.surname.label }} {{ form.surname }}<br />
+    {{ form.name.label }} {{ form.name }}<br />
+    {{ form.age.label }} {{ form.age }}<br />
+    {{ form.position.label }} {{ form.position }}<br />
+    {{ form.speciality.label }} {{ form.speciality }}<br />
+    {{ form.address.label }} {{ form.address }}<br />
+    {{ form.email.label }} {{ form.email }}<br />
+    {{ form.password.label }} {{ form.password }}<br />
+    {{ form.password_again.label }} {{ form.password_again }}<br />
+    {{ form.submit }}
+</form>
+{% endblock %}
