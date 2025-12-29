@@ -1,0 +1,20 @@
+table,
+th,
+td {
+    border: 5px solid white;
+    border-collapse: collapse;
+}
+td {
+    border-collapse: separate;
+    border-spacing: 15px;
+    background-color: #96d4d4;
+    font-size: 112%;
+}
+form {
+    font-size: 90%;
+    white-space-collapse: preserve-breaks;
+    width: 20%;
+}
+input {
+    width: 120%;
+}
